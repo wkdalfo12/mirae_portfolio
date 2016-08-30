@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>미래포트폴리오</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/js/main.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    
+    <style type="text/css">
+       @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+        *{margin: 0;padding: 0;}
+        body{font-family: 'Jeju Gothic', sans-serif;}
+        a{text-decoration:none;}
+        li{list-style:none;}
+        .wrapper{
+             width: 100%;
+             height: 100%;
+             overflow: hidden; 
+             cursor:url('../lib/img/icon.png');
+        }
+        
+        .mainimg{
+            background: url('../lib/img/mirae_1.png');
+            width:100%;
+            height: 1000px;
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: 50% 100%;
+            position:fixed;
+            z-index:-1;
+            text-align:center;
+        }
+        .maintext{
+            color:#FFF;
+            position:relative;
+            font-size:60px;
+            border:1px #FFF solid;
+            top:34%;
+            left:30%;
+            width:750px;
+            text-align:center;
+        }
+        .wing{position: absolute;right: 0;top: 0;margin-top:20px;margin-right: 10px;}
+        .wing img{width: 70px;height: 70px;}
+        
+        .mainimg .popup{
+            width: 1000px;
+            height: 650px;
+            background-color: #FFF;
+            position: absolute;
+            left:23%;
+            font-size:55px;
+            letter-spacing: 2px;
+            padding-top:20px;
+            color:#574949;
+        }
+        
+        .mainimg .popup{overflow:hidden;display:none;}
+        .mainimg .popup .p_left h2{ font-family: 'Lobster', cursive;margin-left: 50px;}
+        .mainimg .popup .p_left{float:left;}
+        .mainimg .popup .p_left ul{width:400px;text-align:left;margin:11% 50px;line-height:25px;letter-spacing: -0.8px;}
+        .mainimg .popup .p_left ul li{font-size:15px;}
+        .mainimg .popup .p_right{float:right;}
+        .mainimg .popup .p_right img{width: 380px;margin:42% 60px;}
+        .p_left ul .aa{border-bottom:2px #574949 solid;margin-bottom:5px;}
+        .p_left p{position:absolute;top:10px;right:40px}
+        .p_left p img{width: 30px;height: 30px;}
+        
+        .body_w{width: 100%;background-color: #FFF;height: 1000px;position:absolute;top:1000px;text-align:center;}
+        .mainimg .maintext a h1{color:#FFF;}
+        .mainimg .maintext a:hover h1{color:#ffd9d9;}
+       
+        .body_w .body_text{font-size:35px;margin-top:200px;letter-spacing:13px;}
+        .vv{position:absolute;left:48%;bottom:70px;}
+        .vv a img{width: 50px;height: 50px;}
+        .footer{background-color: #e8e8e8; width: 100%;height: 1000px;position:absolute;top:2000px;text-align:center;}
+        
+        .footer .f_top{position:absolute;left:48%;bottom:70px;}
+        
+        .f_top .img{
+            display:block;
+            width: 59px;
+            height: 31px;
+            background:url(../lib/img/btn-top.png) no-repeat center top;
+            text-indent:-90000px;
+            transition:height 0.7s;
+        }
+        
+        .f_top .text{
+            display:block;
+            width: 59px;
+            height: 58px;
+            line-height:58px;
+            text-align:center;
+            background:url(../lib/img/txt-top_.png) no-repeat;
+            font-weight: bold;
+            color:#e5e5e5;
+            font-size:20px;
+            cursor:pointer;
+        }
+        .footer .f_top:hover .img{height: 220px;}
+        .footer .f_top:hover .text{text-transform:uppercase;}
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <div class="mainimg">
+                <div class="maintext"><a href=""><h1>Mirae is me</h1></a></div>
+                <div class="vv"><a href=""><img src="../lib/img/down-arrow.png" alt="v"></a></div>
+                <div class="popup">
+                    <div class="p_left">
+                        <p style="cursor:pointer"><img src="../lib/img/pencils.png" alt="닫기"></p>
+                        <h2>Jang Mi Rae</h2>
+                        <ul>
+                            <li class="aa"><strong style="font-size:16px;">장미래</strong>(女)</li>
+                            <li>1992.05.14</li>
+                            <li>010-5359-5845</li>    
+                            <li>wkdalfo12@hanmail.net</li>
+                        </ul>
+                        <ul>
+                            <li class="aa"><strong style="font-size:16px">학력&수료사항</strong></li>
+                            <li>2008.03-2011.02&nbsp;&nbsp;&nbsp;&nbsp;서울문화고등학교 졸업</li>
+                            <li>2011.07-2013.08&nbsp;&nbsp;&nbsp;&nbsp;DBC어학원(일본유학 총2년)</li>
+                            <li>2014.03-2015.02&nbsp;&nbsp;&nbsp;&nbsp;모즈패턴학원 수료</li>
+                            <li>2016.04-2016.09&nbsp;&nbsp;&nbsp;&nbsp;하이미디어 컴퓨터학원</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                             스마트 웹 & 콘텐츠 개발</li>
+                        </ul>
+                        <ul>
+                            <li class="aa"><strong style="font-size:16px">자격사항</strong></li>
+                            <li>JLPT N1 일본어자격증취득</li>
+                        </ul>
+                    </div>
+                    <div class="p_right">
+                        <img src="../lib/img/aa.jpg" alt="팝업내사진">
+                    </div>
+                 </div>
+            </div>
+        </div>
+         
+        <div class="body_w">
+            <div class="body_text">PROJECTS</div>
+            <div class="vv"><a href=""><img src="../lib/img/down-arrow2.png" alt="v"></a></div>
+        </div>
+       <div class="footer">
+           
+           <div class="f_top">
+               <span class="img">top</span>
+               <span class="text">top</span>
+           </div>
+       </div>
+     
+    </div>
+    
+</body>
+</html>
