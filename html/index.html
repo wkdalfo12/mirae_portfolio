@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./in.css">
     <title>미래포트폴리오</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="../lib/js/main.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
 
     <style type="text/css">
        @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
@@ -44,7 +47,8 @@
         /*상단메뉴바*/
         .wrapper .top .mainimg .top_menu{
             float:right;
-            padding:10px 10px 0 0;
+            padding:20px 20px 0 0;
+            z-index:100;
         }
         .wrapper .top .mainimg .top_menu a img{
             width: 40px;
@@ -52,12 +56,36 @@
         }
         .wrapper .top .mainimg .menunone{
             position: absolute;
-            right:0;
-            width: 20%;
+            right:10px;
+            width: 200px;
             background: rgba(255,255,255,0.3);
-            height: 1000px;
-
+            height:950px;
+            top:70px;
+            border-radius:25px;
+            display:none;
         }
+        .wrapper .top .mainimg .menunone ul {
+            text-align:center;
+        }
+        .wrapper .top .mainimg .menunone ul li{
+            text-align: left;
+            font-size:30px;
+            padding:15px;
+            font-family: 'Roboto','Nanum Gothic';
+            width: 70%;
+        }
+        .wrapper .top .mainimg .menunone ul li:first-child{
+            padding-top:25px;
+        }
+        .wrapper .top .mainimg .menunone ul li a{
+            color:#FFF;
+        }
+        .wrapper .top .mainimg .menunone ul li a:hover{
+            color: #ffd9d9;
+            margin-left:15px;
+            font-weight: bold;
+        }
+
 
         .wing{position: absolute;right: 0;top: 0;margin-top:20px;margin-right: 10px;}
         .wing img{width: 70px;height: 70px;}
@@ -89,14 +117,17 @@
         .mainimg .maintext a h1{color:#FFF;padding:5px;}
         .mainimg .maintext a:hover h1{color:#ffd9d9;}
 
-        .body_w .body_text{font-size:35px;margin-top:200px;letter-spacing:13px;}
+        .body_w .body_text{font-size:35px;margin-top:180px;letter-spacing:13px;}
         .vv{position:absolute;left:48%;bottom:70px;}
         .vv a img{width: 50px;height: 50px;}
-        .footer{background-color: #e8e8e8; width: 100%;height: 1000px;position:absolute;top:2000px;text-align:center;}
 
-    /* 푸터 */
-        .footer .f_top{position:absolute;left:48%;bottom:70px;}
+/* 푸터 */
+        .footer{background-color:#ffeeee; width: 100%;height: 1000px;position:absolute;top:2000px;text-align:center;}
+        .footer .footer_img{margin:0 auto;width: 1000px;}
 
+        .footer .footer_img img{width: 400px;height: 370px; margin:0 5px;}
+        .footer .footer_text{font-size:35px;margin-top:100px;margin-bottom:20px;letter-spacing:13px;color:#4b0f0f;}
+        .footer .f_top{position:absolute;left:48%;bottom:50px;}
         .f_top .img{
             display:block;
             width: 59px;
@@ -104,6 +135,18 @@
             background:url(../lib/img/btn-top.png) no-repeat center top;
             text-indent:-90000px;
             transition:height 0.7s;
+        }
+        .footer .footer_img a{
+            display: inline-block;
+            position: relative;
+        }
+        .footer .footer_img a span{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            position: absolute;
+            top:0;
+            left:0;
         }
 
         .f_top .text{
@@ -126,14 +169,22 @@
         font-size:1.3em;
     }
 
+
+
     </style>
 </head>
 <body>
     <div class="wrapper">
         <div class="top">
             <div class="mainimg">
-               <div class="top_menu"><a href=""><img src="../lib/img/menu.png" alt="상단메뉴바"></a></div>
-               <div class="menunone"></div>
+               <div class="menunone">
+                    <ul>
+                        <li><a href="">SKILLS</a></li>
+                        <li><a href="">PROJECTS</a></li>
+                    </ul>
+               </div>
+               <div class="top_menu"><a href=""><img src="../lib/img/menu.png" alt="상단메뉴아이콘"></a></div>
+
                 <div class="maintext"><a href=""><h1>Mirae is me</h1></a></div>
                 <div class="vv"><a href=""><img src="../lib/img/down-arrow.png" alt="v"></a></div>
                 <div class="popup">
@@ -169,10 +220,209 @@
         </div>
 
         <div class="body_w">
-            <div class="body_text">PROJECTS</div>
+            <div class="body_text">SKILLS</div>
+
+<!--  스킬플러그인  -->
+<!--  Container  -->
+        <ul class="progress">
+
+        <!--  Item  -->
+        <li data-name="HTML/HTML5" data-percent="80%">
+            <svg viewBox="-10 -10 220 220">                       <!--동그라미그려주는-->
+            <g fill="none" stroke-width="12" transform="translate(100,100)">
+            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+            </g>
+            </svg>
+            <svg viewBox="-10 -10 220 220">                     <!--색칠해주는 / stroke-dashoffset = 629가 100% -->
+            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="503"></path>
+            </svg>
+        </li>
+
+        <!--  Item  -->
+        <li data-name="CSS/CSS3" data-percent="80%">
+            <svg viewBox="-10 -10 220 220">                       <!--동그라미그려주는-->
+            <g fill="none" stroke-width="12" transform="translate(100,100)">
+            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+            </g>
+            </svg>
+            <svg viewBox="-10 -10 220 220">                     <!--색칠해주는 / 629가 100% -->
+            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="503"></path>
+            </svg>
+        </li>
+
+        <!--  Item  -->
+        <li data-name="jQuery" data-percent="70%">
+            <svg viewBox="-10 -10 220 220">                       <!--동그라미그려주는-->
+            <g fill="none" stroke-width="12" transform="translate(100,100)">
+            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+            </g>
+            </svg>
+            <svg viewBox="-10 -10 220 220">                     <!--색칠해주는 / 629가 100% -->
+            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="440"></path>
+            </svg>
+        </li>
+
+        <!--  Item  -->
+        <li data-name="javascript" data-percent="50%">
+            <svg viewBox="-10 -10 220 220">                       <!--동그라미그려주는-->
+            <g fill="none" stroke-width="12" transform="translate(100,100)">
+            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+            </g>
+            </svg>
+            <svg viewBox="-10 -10 220 220">                     <!--색칠해주는 / 629가 100% -->
+            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="314"></path>
+            </svg>
+        </li>
+
+        <!--  Item  -->
+        <li data-name="LESS" data-percent="60%">
+            <svg viewBox="-10 -10 220 220">                       <!--동그라미그려주는-->
+            <g fill="none" stroke-width="12" transform="translate(100,100)">
+            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+            </g>
+            </svg>
+            <svg viewBox="-10 -10 220 220">                     <!--색칠해주는 / 629가 100% -->
+            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="377"></path>
+            </svg>
+        </li>
+
+        <!--  Item  -->
+        <li data-name="bootstrap" data-percent="50%">
+            <svg viewBox="-10 -10 220 220">                       <!--동그라미그려주는-->
+            <g fill="none" stroke-width="12" transform="translate(100,100)">
+            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+            </g>
+            </svg>
+            <svg viewBox="-10 -10 220 220">                     <!--색칠해주는 / 629가 100% -->
+            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="314"></path>
+            </svg>
+        </li>
+
+        <!--  Item  -->
+        <li data-name="Photoshop/illustrator" data-percent="70%">
+            <svg viewBox="-10 -10 220 220">                       <!--동그라미그려주는-->
+            <g fill="none" stroke-width="12" transform="translate(100,100)">
+            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+            </g>
+            </svg>
+            <svg viewBox="-10 -10 220 220">                     <!--색칠해주는 / 629가 100% -->
+            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="440"></path>
+            </svg>
+        </li>
+
+    </ul>
+    <!--  Defining Angle Gradient Colors  -->
+    <svg width="0" height="0">
+    <defs>
+    <linearGradient id="cl1" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+        <stop stop-color="#618099"/>
+        <stop offset="100%" stop-color="#8e6677"/>
+    </linearGradient>
+    <linearGradient id="cl2" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+        <stop stop-color="#8e6677"/>
+        <stop offset="100%" stop-color="#9b5e67"/>
+    </linearGradient>
+    <linearGradient id="cl3" gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+        <stop stop-color="#9b5e67"/>
+        <stop offset="100%" stop-color="#9c787a"/>
+    </linearGradient>
+    <linearGradient id="cl4" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+        <stop stop-color="#9c787a"/>
+        <stop offset="100%" stop-color="#817a94"/>
+    </linearGradient>
+    <linearGradient id="cl5" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+        <stop stop-color="#817a94"/>
+        <stop offset="100%" stop-color="#498a98"/>
+    </linearGradient>
+    <linearGradient id="cl6" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+        <stop stop-color="#498a98"/>
+        <stop offset="100%" stop-color="#618099"/>
+    </linearGradient>
+    </defs>
+    </svg>
+
+
             <div class="vv"><a href=""><img src="../lib/img/down-arrow2.png" alt="v"></a></div>
         </div>
        <div class="footer">
+           <div class="footer_text">PROJECTS</div>
+           <div class="footer_img">
+
+                <a href="http://pf.i-make.kr:8080/phomein" target="_blank">
+                    <img src="../lib/img/bb_phomein.png" alt="모니터이미지1">
+                 <!--검은막 디스플레이논-->
+                    <span class="none1">
+                            <strong>Phomein</strong>
+                            <p>반응형</p>
+                            <span>Javascript/J-query/css3/html5</span>
+                    </span>
+                </a>
+
+                <a href="http://miraeme.dothome.co.kr/" target="_blank">
+                    <img src="../lib/img/bb_jyp.png" alt="모니터이미지2">
+             <!--검은막 디스플레이논-->
+                    <span class="none2">
+                            <strong>JYP(JJ Project)</strong>
+                            <p>반응형</p>
+                            <span>Javascript/J-query/css3/html5</span>
+                    </span>
+                </a>
+
+                <a href="">
+                    <img src="../lib/img/bb_nillra.png" alt="모니터이미지3">
+                 <!--검은막 디스플레이논-->
+                    <span class="none3">
+                            <strong>Nilla Nilla Vanilla</strong>
+                            <p>메인 제작 참여</p>
+                             <span>css3/html5</span>
+                    </span>
+                </a>
+
+                <a href="">
+                    <img src="../lib/img/bbbb.png" alt="모니터이미지4">
+             <!--검은막 디스플레이논-->
+                    <span class="none4">
+                            <strong>준비중</strong>
+                            <p></p>
+                            <span></span>
+                    </span>
+                </a>
+           </div>
 
            <div class="f_top">
                <span class="img">top</span>
