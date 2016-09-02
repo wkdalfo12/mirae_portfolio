@@ -7,8 +7,7 @@
     text-align: center;
 
 }
-.progress li
-{
+.progress li{
         display: inline-block;
         position: relative;
         text-align: center;
@@ -17,16 +16,14 @@
         font-weight:100;
         margin: 3rem;
     }
-.progress li:before
-{
+.progress li:before{
             content: attr(data-name);
             position: absolute;
             width: 100%;
             bottom: -2rem;
             font-weight:400;
         }
-.progress li:after
-{
+.progress li:after{
             content: attr(data-percent);
             position: absolute;
             width: 100%;
@@ -35,7 +32,6 @@
             font-size: 2rem;
             text-align: center;
         }
-
 svg {
         width: 220px;
         height: 220px;
@@ -54,10 +50,10 @@ svg:nth-child(2) path {
             opacity:.9;
             animation: load 5s;
         }
+        
 @media screen and (max-width:1400px) {
     svg{
         width: 180px;
         height: 180px;
-
     }
 }
