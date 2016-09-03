@@ -172,3 +172,52 @@ img{vertical-align: middle;}
     width: 100%;
     z-index: 100;
 }
+#section4 .videobox .videobtn li.prev{
+    float: left;
+    margin-left: -120px;
+}
+#section4 .videobox .videobtn a{
+    display: block;
+    width: 56px;
+    height: 99px;
+}
+#section4 .videobox .videobtn li.next{
+    float: right;
+    margin-right: -120px;
+}
+
+/*section5*/
+#section5{
+    background: #5f673d;
+    height: 415px;
+}
+#section5 .snslist{
+    margin-top: 60px;
+    margin-left: 180px;
+}
+#section5 .snslist li{
+    float: left;
+    margin-right: 45px;
+}
+
+/*푸터*/
+#footer{
+    clear: both;
+    position: relative;
+    z-index: 11;
+    width: 100%;
+    height: 94px;
+    background: white;
+}
+#footer h1.logo{
+  position: absolute;
+  top: 29px;
+  left: 50%;
+  margin: 0 0 0 -600px;
+}
+#footer .footerGroup{
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  margin: 0 0 0 -460px;
+}
