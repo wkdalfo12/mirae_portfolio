@@ -50,10 +50,16 @@ svg:nth-child(2) path {
             opacity:.9;
             animation: load 5s;
         }
-        
+
 @media screen and (max-width:1400px) {
     svg{
         width: 180px;
         height: 180px;
+    }
+}
+@media screen and (max-width:1140px) {
+    svg{
+        width: 150px;
+        height: 150px;
     }
 }
