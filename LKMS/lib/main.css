@@ -18,6 +18,7 @@ ul,li{list-style: none;}
   position: fixed;
   z-index:2;
   box-sizing:border-box;
+  transition: 500ms;
 
 }
 .header .bb{
@@ -139,7 +140,7 @@ ul,li{list-style: none;}
 
 }
 .contents4 .c_contents{
-  max-width: 1024px;
+
   margin:0 auto;
 }
 
@@ -149,17 +150,21 @@ ul,li{list-style: none;}
   /*height: 360px;*/
   display:inline-block;
   outline:1px #CCC solid;
-  margin-right: 16px;
   background-color: #fff;
 }
-.contents4 .c_contents .care4{
-  margin-right: 0;
-}
+
 .contents4 .c_contents .com .care_h{
   text-align: center;
   position: relative;
 }
-.contents4 .c_contents .com .care_h img{
+.contents4 .c_contents .com .care_h .bgimg{
+  background-image: url("../img/main/img_2.jpg");
+  width: 95px;
+  height: 100px;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: absolute;
   top:28%;
   left:30%;
@@ -266,7 +271,12 @@ ul,li{list-style: none;}
     margin-right:0;
     float:left;
   }
-  .contents4 .c_contents .bottom_1{}
+  .contents4 .c_contents .com .care_h .bgimg{
+    border-radius: 20%;
+    width: 32%;
+    top:31%;
+    left:35%;
+  }
 
 
 }
@@ -307,6 +317,11 @@ ul,li{list-style: none;}
     background-color: rgba(255,255,255,0.4);
   }
 }
+@media screen and (max-width:993PX){
+  #nn{
+    margin-left: 0;
+  }
+}
 @media screen and (max-width:765px){
   .header{
     height: 55px;
@@ -343,14 +358,8 @@ ul,li{list-style: none;}
     margin-left:0;
     margin-bottom: 50px;
   }
-  .contents4 .c_contents .com{
-    margin-left: 90px;
-    margin-right:0;
-  }
-  .contents4 .c_contents .top_1{
-    margin-bottom:50px;
-  }
-  .contents4 .c_contents .com .care_h img{
+
+  .contents4 .c_contents .com .care_h .bgimg{
     width: 30%;
     top:31%;
     left:35%;
@@ -360,6 +369,23 @@ ul,li{list-style: none;}
   }
   .contents4 .c_head p{
     right: 0;
+  }
+
+}
+@media screen and (max-width:420px){
+  .header{
+    height: 50px;
+  }
+  .header .bb .logo-s{
+    line-height: 50px;
+  }
+  .header .bb .logo-s a img{
+    width: 30%;
+      margin-bottom: 5px;
+  }
+  .header .nav ul{
+    top:0;
+
   }
 
 }
