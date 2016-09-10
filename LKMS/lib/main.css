@@ -101,6 +101,7 @@ ul,li{list-style: none;}
   color:#FFF;
   font-size:25px;
 }
+
 .contents3 div{
   text-align:center;
   padding:0;
@@ -119,37 +120,103 @@ ul,li{list-style: none;}
 }
 .contents4{
   background-color: #ecf1f5;
-  height: 670px;
+  height: 700px;
+  width: 100%;
 }
-.contents4 bb{
-  text-align: center;
+.contents4 .c_head{
+  /*height: 100%;*/
 }
 .contents4 h1{
   text-align:center;
-  margin-top:50px;
   margin-bottom:50px;
+  margin-top: 50px;
+  padding-top: 60px;
 
 }
-.contents4 strong{
-  display:block;
+.contents4 .c_head p{
   text-align: center;
   margin-bottom:80px;
 
 }
-.contents4 img{
-  border:1px #CCC solid;
+.contents4 .c_contents{
+  max-width: 1024px;
+  margin:0 auto;
 }
-.contents4 .bb a{
-  text-decoration: none;
+
+/*care부분*/
+.contents4 .c_contents .com{
+  width: 241px;
+  /*height: 360px;*/
+  display:inline-block;
+  outline:1px #CCC solid;
+  margin-right: 16px;
+  background-color: #fff;
 }
-.contents4 .bb a span{
-  width: 245px;
-  height: 100px;
-  background: #0FF;
+.contents4 .c_contents .care4{
+  margin-right: 0;
+}
+.contents4 .c_contents .com .care_h{
   text-align: center;
-  font-size:20px;
-  color:#FFF;
+  position: relative;
 }
+.contents4 .c_contents .com .care_h img{
+  position: absolute;
+  top:28%;
+  left:30%;
+}
+.contents4 .c_contents .com .care_t{
+  text-align: center;
+}
+.contents4 .c_contents .com .care_t .in_text{
+  font-size:18px;
+  color:#383838;
+}
+.contents4 .c_contents .com .care_t .in_box{
+  font-size:11px;
+  border:1px #CCC solid;
+  border-radius: 5px;
+  width: 160px ;
+  color:#8f8f8f;
+  margin:0 auto;
+  line-height:19px;
+  margin-bottom: 25px;
+}
+.contents4 .c_contents .com .care_c{
+  width: 100%;
+  height: 55px;
+  margin:0 auto;
+  text-align: center;
+}
+.contents4 .c_contents .com .care_c span{
+  display: inline-block;
+  margin: 0 10px;
+
+}
+.contents4 .c_contents .com .care_c span p:first-child{
+  font-size:11px;
+  color:#686868;
+  margin-bottom:5px;
+}
+.contents4 .c_contents .com .care_c span p:last-child{
+  font-size:15px;
+  color:#383838;
+}
+.contents4 .c_contents .com .care_f button{
+  background-color: #11bdfb;
+  width: 100%;
+  height: 55px;
+  border:0;
+  color:#FFF;
+  font-size:18px;
+}
+/*플러그인관련*/
+.care_h .progress{
+  height: 100%;
+  background-color: #fff;
+  margin-bottom: 0;
+}
+
+
 /*하버관련*/
 .header .nav ul li:hover{
   font-weight: bold;
@@ -161,11 +228,14 @@ ul,li{list-style: none;}
 
 /*미디어쿼리*/
 @media screen and (max-width:1200px){
+  .contents .contents2 span{
+    font-size:20px;
+  }
   .contents3 div p{
     margin: 0;
   }
-  .contents .contents2 span{
-    font-size:20px;
+  .contents3 {
+        height: 750PX;
   }
   #hh{
     margin-top: 100px;
@@ -174,6 +244,30 @@ ul,li{list-style: none;}
     bottom:340px;
     margin-left: 9%;
   }
+  .contents4 .c_head{
+    width: 100%;
+  }
+  .contents4{
+    height: 100%;
+  }
+  .contents4 .c_head h1{
+    font-size:30px;
+    position: relative;
+    right:25%;
+  }
+  .contents4 .c_head p{
+    position: relative;
+    right: 25%;
+  }
+  .contents4 .c_head{
+    width: 100%;
+  }
+  .contents4 .c_contents .top_1{
+    margin-right:0;
+    float:left;
+  }
+  .contents4 .c_contents .bottom_1{}
+
 
 }
 @media screen and (max-width:1024px){
@@ -206,6 +300,8 @@ ul,li{list-style: none;}
     position: relative;
     left:-99999px;
   }
+
+
   /*하버*/
   .header .nav ul li:hover{
     background-color: rgba(255,255,255,0.4);
@@ -232,12 +328,12 @@ ul,li{list-style: none;}
     line-height: 40px;
     font-size:13px;
     width: 120px;
-
-
   }
-
   .contents .contents2 span{
     font-size:15px;
+  }
+  .contents3{
+    height: 1364PX;
   }
   #hh{
     margin-top:0;
@@ -246,6 +342,24 @@ ul,li{list-style: none;}
     bottom:0;
     margin-left:0;
     margin-bottom: 50px;
+  }
+  .contents4 .c_contents .com{
+    margin-left: 90px;
+    margin-right:0;
+  }
+  .contents4 .c_contents .top_1{
+    margin-bottom:50px;
+  }
+  .contents4 .c_contents .com .care_h img{
+    width: 30%;
+    top:31%;
+    left:35%;
+  }
+  .contents4 .c_head h1{
+    right:0;
+  }
+  .contents4 .c_head p{
+    right: 0;
   }
 
 }

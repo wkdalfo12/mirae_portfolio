@@ -35,6 +35,7 @@ $(function(){
     })
 
     var aa = $(window).scrollTop();
+
     if( aa == 0 ){
       $('.header').css({
         'background':'rgba(255,255,255,0.2)'
@@ -48,8 +49,19 @@ $(function(){
       })
     }
 
+    // 플러그인
+    if(aa > 500){
+        $('.progress').css({
+          display:'block'
+        })
+    }
+
+
+
 
   })
+
+
 
 
 
